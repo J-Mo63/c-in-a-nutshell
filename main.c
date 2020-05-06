@@ -1,6 +1,6 @@
-#include "chapter_1/c1.h"
+#include "language_basics/circle.h"
 
 int main() {
-    c1Run();
+    generateCircle();
     return 0;
 }
