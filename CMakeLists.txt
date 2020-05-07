@@ -7,5 +7,5 @@ add_executable(
         the_nutshell main.c
         language_basics/circle.c
         types/limits.c
-        types/using_void.c
+        types/void.c
         types/enums.c)

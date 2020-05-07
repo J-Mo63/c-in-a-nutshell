@@ -2,7 +2,7 @@
 // Created by Jonathan Moallem on 7/5/20.
 //
 
-#include "using_void.h"
+#include "void.h"
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>

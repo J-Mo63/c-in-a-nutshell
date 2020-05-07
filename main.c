@@ -1,7 +1,7 @@
 #include "language_basics/circle.h"
 #include "types/limits.h"
 #include "types/enums.h"
-#include "types/using_void.h"
+#include "types/void.h"
 
 typedef void (*emptyMethod)();
 
