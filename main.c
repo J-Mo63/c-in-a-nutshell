@@ -4,10 +4,11 @@
 #include "types/void.h"
 #include "literals/literals.h"
 #include "type_conversions/conversions.h"
+#include "expressions_and_operators/expressions.h"
 
 typedef void (*emptyMethod)();
 
-void (*funcArr[])() = {generateCircle, getLimits, viewEnums, useVoid, runLiterals, runConversions};
+void (*funcArr[])() = {generateCircle, getLimits, viewEnums, useVoid, runLiterals, runConversions, runExpressions};
 
 int main() {
     for (int i = 0; i < (sizeof(funcArr) / sizeof(emptyMethod)); i++) {

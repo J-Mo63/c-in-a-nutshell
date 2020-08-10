@@ -10,4 +10,6 @@ add_executable(
     types/void.c
     types/enums.c
     literals/literals.c
-    type_conversions/conversions.c)
+    type_conversions/conversions.c
+    expressions_and_operators/expressions.c
+)
