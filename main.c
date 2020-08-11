@@ -5,6 +5,7 @@
 #include "literals/literals.h"
 #include "type_conversions/conversions.h"
 #include "expressions_and_operators/expressions.h"
+#include "statements/statements.h"
 
 typedef void (*emptyMethod)();
 
@@ -16,6 +17,7 @@ void (*funcArr[])() = {
         runLiterals,
         runConversions,
         runExpressions,
+        runStatements
 };
 
 int main() {
