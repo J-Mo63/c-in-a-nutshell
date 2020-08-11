@@ -22,7 +22,7 @@ void runExpressions() {
 
     // There are lValues and rValues
     int lValue /* this is the LEFT value */ = 1 + rValue; /* And this is the RIGHT value */
-    printf("\n%i", lValue);
+    printf("\nThe lValue: %i", lValue);
 
     // Anything with a location in memory may be an lValue
     int lArray[] = {0, 2, 4};
@@ -32,15 +32,15 @@ void runExpressions() {
     // Mainly references do not resolve to locations
     *lPtr++; // Both the increment
     *lPtr--; // and deincrement operators require a modifiable lValue
-    printf("\n%i", *lPtr);
+    printf("\nIncrement and deincrement operators: %i", *lPtr);
 
     // Associativity on unary operators is higher than binary
     int b = *lPtr * *lPtr;
-    printf("\n%i", b);
+    printf("\nUnary operation precedence: %i", b);
 
     // Expressions allow for arithmetic to be performed on pointers
     int* arrayPtr = lArray;
-    printf("\n%i", *(arrayPtr + 2));
+    printf("\nPointer arithmetic: %i", *(arrayPtr + 2));
 
     // Prefix and postfix increment have the same side effects
     int inc = 0;
@@ -56,7 +56,7 @@ void runExpressions() {
     }
 
     // Arrays may be indexed either way
-    printf("\n%i", 2[lArray]);
+    printf("\nBackwards array-indexing: %i", 2[lArray]);
 
     // The & and * operators are complementary and thus cancel each other out
     int* newPtr = &*endPtr;
@@ -65,10 +65,10 @@ void runExpressions() {
     struct Values e = {0, 1, 2};
     e.one = 1;
     e.two = 2;
-    printf("\n%i", e.one); // The . accesses a member directly
+    printf("\nAccess with .: %i", e.one); // The . accesses a member directly
     struct Values* v = &e;
-    printf("\n%i", v->two); // The -> accesses a member via indirection
-    printf("\n%i", (*v).two); // And is roughly equivalent to this
+    printf("\nAccess with ->: %i", v->two); // The -> accesses a member via indirection
+    printf("\nAccess with . after dereference: %i", (*v).two); // And is roughly equivalent to this
 
     // The compound literal operator can be used to declare unnamed
     // structs, unions and arrays
@@ -76,15 +76,15 @@ void runExpressions() {
     processArray(anon);
 
     // The ternary operator can be used to simplify branching logic
-    printf("\n%i", (v ? 1 : 2));
+    printf("\nTernary operation result: %i", (v ? 1 : 2));
 
     // The comma operator may be used to run expressions sequentially
     newPtr++, --newPtr, newPtr++, --newPtr;
-    printf("\n%i", *newPtr);
+    printf("\nResult of sequential statements: %i", *newPtr);
 }
 
 void endlessVoid() {}
 
 void processArray(int hello[]) {
-    printf("\n%i", hello[0]);
+    printf("\nThis was an anonymous array: %i", hello[0]);
 }

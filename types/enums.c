@@ -11,7 +11,7 @@ void viewEnums() {
     for (int i = 0; i < sizeof(arr) / sizeof(int); i++) {
         printf("The enum value is: %i\n", arr[i]);
     }
-    printf("%s\n", getEnum(THREE));
+    printf("\n%s", getEnum(THREE));
 }
 
 char* getEnum(enum number num) {

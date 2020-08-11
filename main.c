@@ -8,7 +8,15 @@
 
 typedef void (*emptyMethod)();
 
-void (*funcArr[])() = {generateCircle, getLimits, viewEnums, useVoid, runLiterals, runConversions, runExpressions};
+void (*funcArr[])() = {
+        generateCircle,
+        getLimits,
+        viewEnums,
+        useVoid,
+        runLiterals,
+        runConversions,
+        runExpressions,
+};
 
 int main() {
     for (int i = 0; i < (sizeof(funcArr) / sizeof(emptyMethod)); i++) {

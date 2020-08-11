@@ -43,7 +43,7 @@ void testRecursive(int testVal) {
     void ((*fn)(int)) = testRecursive;
     testVal++;
     if (testVal <= 3){
-        printf("%d\n", testVal);
+        printf("\nRecursive test: %d", testVal);
         fn(testVal);
     }
 }
