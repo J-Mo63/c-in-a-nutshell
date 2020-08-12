@@ -12,4 +12,5 @@ add_executable(
     literals/literals.c
     type_conversions/conversions.c
     expressions_and_operators/expressions.c
-    statements/statements.c)
+    statements/statements.c
+    functions/functions.c)
