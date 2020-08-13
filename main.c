@@ -7,6 +7,7 @@
 #include "expressions_and_operators/expressions.h"
 #include "statements/statements.h"
 #include "functions/functions.h"
+#include "arrays/arrays.h"
 
 typedef void (*emptyMethod)();
 
@@ -20,6 +21,7 @@ void (*funcArr[])() = {
         runExpressions,
         runStatements,
         runFunctions,
+        runArrays,
 };
 
 int main() {

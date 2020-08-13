@@ -13,4 +13,5 @@ add_executable(
     type_conversions/conversions.c
     expressions_and_operators/expressions.c
     statements/statements.c
-    functions/functions.c)
+    functions/functions.c
+    arrays/arrays.c)
