@@ -14,4 +14,5 @@ add_executable(
     expressions_and_operators/expressions.c
     statements/statements.c
     functions/functions.c
-    arrays/arrays.c)
+    arrays/arrays.c
+    pointers/pointers.c)

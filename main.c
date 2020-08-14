@@ -8,6 +8,7 @@
 #include "statements/statements.h"
 #include "functions/functions.h"
 #include "arrays/arrays.h"
+#include "pointers/pointers.h"
 
 typedef void (*emptyMethod)();
 
@@ -22,6 +23,7 @@ void (*funcArr[])() = {
         runStatements,
         runFunctions,
         runArrays,
+        runPointers,
 };
 
 int main() {
