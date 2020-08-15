@@ -61,9 +61,13 @@ void runPointers() {
     };
     struct Data d = {7}, * restrict dPtr = &d;
 
+    // Volatile pointers inform the compiler that it may be accessed
+    // and modified by external programs
+    int* volatile vol = 0;
+
     // Arrays of pointers may also be defined, and can often be more efficient than
     // using multidimensional arrays, especially for storing lengthy data types
-    int* ptrArry[] = {*ptrPtr, &num1, num1Ptr};
+    int* ptrArry[] = {*ptrPtr, &num1, vol};
     printf("\nPointer array value: %p", ptrArry[1]);
 
     float (*floatyFunc)(float) = floaty;
