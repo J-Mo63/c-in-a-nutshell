@@ -15,4 +15,5 @@ add_executable(
     statements/statements.c
     functions/functions.c
     arrays/arrays.c
-    pointers/pointers.c)
+    pointers/pointers.c
+    structures_unions_bitfields/records.c)
