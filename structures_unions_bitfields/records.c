@@ -9,6 +9,7 @@
 // Unions define types that may be interpreted as multiple types, they
 // share the same bit space, and are as long as their longest member
 union ID {
+    // Bit-fields can be defined in the following way and refer to a length of bits in a type
     _Bool isSet: 1;
     char name[2];
     int serial;
@@ -37,8 +38,8 @@ void runRecords() {
     union ID id = { .serial = 30049 };
     printf("\nID value: %s", id.name);
 
+    // Bit-fields are treated as normal members of structs and unions
     union ID blankId = {};
-
     if (!blankId.isSet) {
         printf("\nThe id is unset");
     }
