@@ -10,6 +10,7 @@
 #include "arrays/arrays.h"
 #include "pointers/pointers.h"
 #include "structures_unions_bitfields/records.h"
+#include "declarations/declarations.h"
 
 typedef void (*emptyMethod)();
 
@@ -26,6 +27,7 @@ void (*funcArr[])() = {
         runArrays,
         runPointers,
         runRecords,
+        runDeclarations,
 };
 
 int main() {
