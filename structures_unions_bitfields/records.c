@@ -18,8 +18,8 @@ union ID {
 void runRecords() {
     // Structs can be declared and defined in the following ways using
     // either the struct tag or typedef in the declaration
-    struct Node node1 = {7, NULL}, * node1Ptr = &node1;
-    Node_t node2 = {12, node1Ptr}, * node2Ptr = &node2;
+    struct Value node1 = {7, NULL}, * node1Ptr = &node1;
+    Value_t node2 = {12, node1Ptr}, * node2Ptr = &node2;
 
     // Structs using automatic storage do not have their fields
     // initialised and must otherwise use an initialisation list

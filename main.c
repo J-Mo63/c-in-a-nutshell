@@ -11,6 +11,7 @@
 #include "pointers/pointers.h"
 #include "structures_unions_bitfields/records.h"
 #include "declarations/declarations.h"
+#include "dynamic_memory_management/memory.h"
 
 typedef void (*emptyMethod)();
 
@@ -28,6 +29,7 @@ void (*funcArr[])() = {
         runPointers,
         runRecords,
         runDeclarations,
+        runMemory,
 };
 
 int main() {
