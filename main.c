@@ -12,6 +12,7 @@
 #include "structures_unions_bitfields/records.h"
 #include "declarations/declarations.h"
 #include "dynamic_memory_management/memory.h"
+#include "input_and_output/io.h"
 
 typedef void (*emptyMethod)();
 
@@ -30,6 +31,7 @@ void (*funcArr[])() = {
         runRecords,
         runDeclarations,
         runMemory,
+        runIo,
 };
 
 int main() {

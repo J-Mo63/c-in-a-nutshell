@@ -18,4 +18,5 @@ add_executable(
     pointers/pointers.c
     structures_unions_bitfields/records.c
     declarations/declarations.c
-    dynamic_memory_management/memory.c)
+    dynamic_memory_management/memory.c
+    input_and_output/io.c)
