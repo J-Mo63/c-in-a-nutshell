@@ -13,6 +13,7 @@
 #include "declarations/declarations.h"
 #include "dynamic_memory_management/memory.h"
 #include "input_and_output/io.h"
+#include "preprocessing_directives/preprocessing.h"
 
 typedef void (*emptyMethod)();
 
@@ -32,6 +33,7 @@ void (*funcArr[])() = {
         runDeclarations,
         runMemory,
         runIo,
+        runPreprocessing,
 };
 
 int main() {

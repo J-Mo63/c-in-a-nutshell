@@ -19,4 +19,5 @@ add_executable(
     structures_unions_bitfields/records.c
     declarations/declarations.c
     dynamic_memory_management/memory.c
-    input_and_output/io.c)
+    input_and_output/io.c
+    preprocessing_directives/preprocessing.c)
