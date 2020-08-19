@@ -38,10 +38,11 @@ void runMemory()
     // lists, below is a simple implementation of a linked list
     Node_t* root = newNode(0);
     Node_t* current = root;
-    for (int i = 0; i <= (sizeof(a) / sizeof(int)); i++) {
+    for (int i = 0; i < (sizeof(a) / sizeof(int)); i++) {
         current->next = newNode(a[i]);
         current = current->next;
     }
+    current->next = NULL;
 
     current = root;
     while(current) {

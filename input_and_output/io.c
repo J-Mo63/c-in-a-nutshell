@@ -6,7 +6,11 @@
 #include "io.h"
 
 void runIo() {
-    char* line = "This is a file with a line of text.";
+
+    // The scanf function can be used to read formatted input from stdin
+    char line[12];
+    printf("\nEnter word: ");
+    scanf("%s", line);
 
     // To access files a buffer must be opened by gaining access to a
     // FILE pointer, which can then be operated on in the mode specified
@@ -17,8 +21,10 @@ void runIo() {
         fprintf(stderr, "\nError Writing");
     }
 
+    char* linePtr = line;
+
     // The following is a common idiom for writing characters to a stream
-    while (*line) putc(*line++, wf);
+    while (*linePtr) putc(*linePtr++, wf);
 
     // The file should be closed using its FILE pointer after use
     fclose(wf);
